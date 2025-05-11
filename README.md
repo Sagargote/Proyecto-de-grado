@@ -12,3 +12,17 @@ Este proyecto desarrolla un sistema de monitoreo basado en sensores IoT para opt
 ## Instalación
 Para utilizar el sistema, sigue los pasos:
 1. Clonar este repositorio:
+
+/Proyecto-Monitoreo-Hidráulico
+│── README.md
+│── docs/
+│   ├── Informe_Tecnico.pdf
+│   ├── Manual_Usuario.pdf
+│   ├── Diagramas_Arquitectura.pdf
+│── src/
+│   ├── frontend/
+│   ├── backend/
+│   ├── sensores/
+│── img/
+│   ├── logo_proyecto.png
+│   ├── esquema_funcional.png
