@@ -2,6 +2,7 @@
 
 Estructura del repositorio en GitHub
 Para subir correctamente el código del proyecto, la estructura recomendada del repositorio es la siguiente:
+
 /Proyecto-Monitoreo-Hidráulico
 │── README.md
 │── docs/
@@ -15,7 +16,6 @@ Para subir correctamente el código del proyecto, la estructura recomendada del 
 │── img/
 │   ├── logo_proyecto.png
 │   ├── esquema_funcional.png
-
 
 ## Descripción
 Este proyecto desarrolla un sistema de monitoreo basado en sensores IoT para optimizar el mantenimiento de bombas hidráulicas en Tocancipá. Se emplea una plataforma de gestión que recopila datos en tiempo real sobre presión y caudal, generando alertas predictivas para evitar fallos inesperados.
