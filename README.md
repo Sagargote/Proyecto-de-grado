@@ -6,6 +6,7 @@ Para subir correctamente el código del proyecto, la estructura recomendada del 
 /Proyecto-Monitoreo-Hidráulico
 │── README.md
 │── docs/
+
 │   ├── Informe_Tecnico.pdf
 │   ├── Manual_Usuario.pdf
 │   ├── Diagramas_Arquitectura.pdf
