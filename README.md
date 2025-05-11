@@ -5,18 +5,29 @@ Para subir correctamente el código del proyecto, la estructura recomendada del 
 
 /Proyecto-Monitoreo-Hidráulico
 │── README.md
+
 │── docs/
 
 │   ├── Informe_Tecnico.pdf
+
 │   ├── Manual_Usuario.pdf
+
 │   ├── Diagramas_Arquitectura.pdf
+
 │── src/
+
 │   ├── frontend/
+
 │   ├── backend/
+
 │   ├── sensores/
+
 │── img/
+
 │   ├── logo_proyecto.png
+
 │   ├── esquema_funcional.png
+
 
 ## Descripción
 Este proyecto desarrolla un sistema de monitoreo basado en sensores IoT para optimizar el mantenimiento de bombas hidráulicas en Tocancipá. Se emplea una plataforma de gestión que recopila datos en tiempo real sobre presión y caudal, generando alertas predictivas para evitar fallos inesperados.
