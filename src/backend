@@ -1,0 +1,42 @@
+CREATE DATABASE monitoreo_hidraulico;
+
+USE monitoreo_hidraulico;
+
+CREATE TABLE sensores (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    presion FLOAT NOT NULL,
+    caudal FLOAT NOT NULL,
+    timestamp DATETIME NOT NULL
+);
+from flask import Flask, request, jsonify
+import mysql.connector
+
+app = Flask(__name__)
+
+# Configuración de la base de datos
+db = mysql.connector.connect(
+    host="localhost",
+    user="tu_usuario",
+    password="tu_contraseña",
+    database="monitoreo_hidraulico"
+)
+cursor = db.cursor()
+
+# Ruta para recibir datos de los sensores
+@app.route('/recibir_datos', methods=['POST'])
+def recibir_datos():
+    datos = request.json
+    presion = datos.get("presion")
+    caudal = datos.get("caudal")
+    timestamp = datos.get("timestamp")
+
+    # Guardar en la base de datos
+    query = "INSERT INTO sensores (presion, caudal, timestamp) VALUES (%s, %s, %s)"
+    valores = (presion, caudal, timestamp)
+    cursor.execute(query, valores)
+    db.commit()
+
+    return jsonify({"mensaje": "Datos recibidos correctamente"}), 200
+
+if __name__ == '__main__':
+    app.run(debug=True, host="0.0.0.0", port=5000)
